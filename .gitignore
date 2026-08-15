@@ -1,1 +1,4 @@
 
+*.neoforge-tmp
+*.tmp
+session.lock

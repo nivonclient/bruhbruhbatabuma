@@ -15,6 +15,7 @@ GITIGNORE=".gitignore"
 ensure_ignored() {
     local pattern="$1"
     if [ -f "$GITIGNORE" ] && grep -qxF "$pattern" "$GITIGNORE"; then
+       
         return 0
     fi
     echo "$pattern" >> "$GITIGNORE"
